@@ -21,7 +21,7 @@ class Personne{
 })
 export class AppComponent {
 
-     count = 0;
+ 
 
   title = 'My project:';
    personne = new Personne("Rafaralahy",
@@ -33,6 +33,12 @@ export class AppComponent {
    clickOn(){
    	this.count++:
    	this.personne.prenom=this.personne.prenom +" "+this.count;
+   }
+
+   count = 0;
+   output="";
+   calcOn(number){
+   	this.output=this.output+number;
    }
 
   

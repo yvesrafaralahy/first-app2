@@ -39,6 +39,37 @@
       </ul>
 </div>
 
+  <h3>Calculatrice</h3>
+ <form>
+      <p>
+      <input type="text" readonly="readonly" name="output" id="res" value="{{output}}">
+      </p>
+    
 
+    <p>
+        <button name="btn1"  value="1" (click)='calcOn(1)'>1</button>
+        <button name="btn2"  value="2" (click)='calcOn(2)'>2</button>
+        <button name="btn3"  value="3" (click)='calcOn(3)'>3</button>
+        <button name="Moins"  (click)='subtract()'> - </button>
+        <br>
+        <button name="btn4"  value="4" (click)='calcOn(4)'>4</button>
+        <button name="btn5"  value="5" (click)='calcOn(5)'>5</button>
+        <button name="btn6"  value="6" (click)='calcOn(6)'>6</button>
+        <button name="Plus"  (click)='add()'>+</button>
+        <br>
+        <button name="btn7"  value="7" (click)='calcOn(7)'>7</button>
+        <button name="btn8"  value="8" (click)='calcOn(8)'>8</button>
+        <button name="btn9"  value="9" (click)='calcOn(9)'>9</button>
+        <button name="Egal" (click)='calculate()'>=</button>
+        <br>
+        <button name="btn0"  value="0" (click)='calcOn(0)'>0</button>
+        <button name="multiply" (click)='multiply()'>x</button>
+        <button name="divide" (click)='divide()'>/</button>
+        <button name="clear"  (click)='clear()'>C</button>
+      </p>
+    </form>
+      
+
+   
 
 
