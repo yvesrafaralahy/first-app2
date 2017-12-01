@@ -26,16 +26,12 @@
 
 </ul>
 
-
-<box [boxMsg]="type"></box>
-
 <h2>Box Message</h2>
 
+<box [boxMsg]="type"></box>
 <div>
     <ul>
-        <li (click)="clickList(b)" *ngFor="let b of List"><span [class.info]="b==type">INFO: {{b.type}}</span></li>
-        <li (click)="clickList(b)" *ngFor="let b of List"><span [class.warning]="b==type">WARNING: {{b.type}}</span></li>
-        <li (click)="clickList(b)" *ngFor="let b of List"><span [class.error]="b==type">ERROR: {{b.type}}</span></li>
+        <li (click)="clickList(b)" *ngFor="let b of List"><span [class.selected]="b==type">{{b.type}}</span></li>
     </ul>
 </div>
 

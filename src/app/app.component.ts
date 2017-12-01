@@ -25,6 +25,21 @@ export class AppComponent {
 
   title = 'Liste des "Scientifiques":';
 
+  List =[
+    {titre:"LIGTH", message:"Lorem ipsum dolor sit amet, no nec alii falli placerat. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, no nec alii falli placerat. Lorem ipsum dolor sit amet, no nec alii falli placerat. Vix virtute pertinacia te, ei utroque fuisset sed. Qui id sonet scaevola. Quo aperiri fierent adolescens ei, no eos meis nonumy, mel meis dictas et.", 
+    type:"INFO"},
+    {titre:"MEDIUM", message:"Ius ipsum velit nominavi ex. Ius eu nostro nostrud dissentias. Ne usu enim timeam signiferumque. His ne nominati torquatos, eum putant delenit albucius ei, nostro tincidunt quo ut.", 
+    type:"WARNING"},
+    {titre:"HIGH", message:"Cu vel tollit torquatos. Te sed facer oblique nonumes, vel velit mandamus quaerendum ne. ", 
+    type:"ERROR"}
+  ]
+
+  type=this.List[0];
+
+  clickList(b){
+  this.type=b; 
+  }
+
    /*personne = new Personne("Rafaralahy",
 				"Yves",
 				"Cooking things...",
