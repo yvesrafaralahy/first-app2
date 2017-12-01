@@ -17,8 +17,10 @@ class Personne{
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers:[]
 })
+
 export class AppComponent {
 
   title = 'Liste des "Scientifiques":';
@@ -40,19 +42,15 @@ export class AppComponent {
    	this.personne = p;
    }
 }
-/*
-   count = 0;
+
+   /*count = 0;
    output="";
 
    calcOn(number:String){
    	this.output=this.output+number;
-   }
-*/
+   }*/
 
 
-
-
-  
  /*
   import { Component } from '@angular/core';
 

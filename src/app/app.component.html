@@ -26,6 +26,20 @@
 
 </ul>
 
+
+<box [boxMsg]="type"></box>
+
+<h2>Box Message</h2>
+
+<div>
+    <ul>
+        <li (click)="clickList(b)" *ngFor="let b of List"><span [class.info]="b==type">INFO: {{b.type}}</span></li>
+        <li (click)="clickList(b)" *ngFor="let b of List"><span [class.warning]="b==type">WARNING: {{b.type}}</span></li>
+        <li (click)="clickList(b)" *ngFor="let b of List"><span [class.error]="b==type">ERROR: {{b.type}}</span></li>
+    </ul>
+</div>
+
+<!--
 <div> 
   <h2>Modifications</h2>
 
@@ -35,18 +49,25 @@
 
 
     <ul>
-       <li><input class="{{personne.nom}}"
+        <li><input class="{{personne.nom}}"
            [class.erreur]="!personne.nom" 
            [class.info]="personne.nom=='Fernando'" 
           [(ngModel)]="personne.nom" /></li>
-       <li><input [(ngModel)]="personne.prenom" placeholder ="prenom"/></li>
-       <li><textarea [(ngModel)]="personne.description" placeholder ="description">
-    </textarea></li>
-      <li><textarea [(ngModel)]="personne.travail" placeholder ="travail">
-    </textarea></li>
-      </ul>
+        <li><input [(ngModel)]="personne.prenom" placeholder ="prenom"/></li>
+        <li><textarea [(ngModel)]="personne.description" placeholder ="description">
+        </textarea></li>
+        <li><textarea [(ngModel)]="personne.travail" placeholder ="travail">
+        </textarea></li>
+      
+    </ul>
 </div>
 
+
+<h3>App detail</h3>
+
+<detail [nomPersonne]="personne"></detail>
+<detail [nomPersonne]="personne"></detail>
+<detail [nomPersonne]="personne"></detail>
 
   <h3>Calculatrice</h3>
  <table border="1" cellpadding="10" cellspacing="0">
@@ -80,8 +101,9 @@
         <td (click)="calcOn('c')"><input type="button" name="clear" value="c" /></td>
     </tr>
   </table>
-      
 
+      
+-->
    
 
 
